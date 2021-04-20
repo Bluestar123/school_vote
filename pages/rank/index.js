@@ -5,18 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-    rankList: new Array(30).fill({
+    ranklist: Array(12).fill({
       name: '456',
-      avatar: '',
-      popularity: 111111111
-    })
+      avatar: 'https://up.enterdesk.com/edpic_360_360/27/8f/93/278f938be4b460a57962d542eee989f6.jpg',
+      popularity: 111111111,
+      words: '333'
+    }),
+    topRankList: [],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      topRankList: this.data.ranklist.slice(0, 3)
+    })
   },
 
   /**

@@ -1,1 +1,87 @@
 /* pages/rank/index.wxss */
+.container {
+  min-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(180deg, #FE8302 0%, rgba(255, 255, 255, 0.5) 100%);
+}
+.mask {
+  position: fixed;
+  width: 656rpx;
+  height: 247rpx;
+  background: #FFA74A;
+  opacity: 0.47;
+  transform: skew(-30deg);
+  top: 0;
+  left: -95rpx;
+  z-index: 0;
+}
+.rankCls {
+  position: relative;
+  background: #fff;
+  z-index: 15;
+  height: 387rpx;
+  border-radius: 8rpx 8rpx 0rpx 0rpx;
+  padding-top: 60rpx;
+  box-shadow: 0px 2px 20px 0px rgba(254, 144, 28, 0.2);
+}
+.rankCls:nth-child(3) {
+  z-index: 11;
+}
+.rankCls:nth-child(2) {
+  padding-top: 30rpx;
+  width: 265rpx;
+  height: 420rpx;
+}
+.top-rank-el {
+  height: 450rpx;
+  padding: 0 30rpx;
+  box-shadow: 0px 2px 20px 0px rgba(254, 144, 28, 0.2);
+
+}
+
+.list {
+  background-color: #fff;
+  border-radius: 8rpx 8rpx 0px 0px;
+  margin-top: -100rpx;
+  padding: 30rpx 0;
+  padding-top: 130rpx;
+  z-index: 5
+}
+.rank-item {
+  padding: 30rpx;
+  border-bottom: 1rpx solid #C5C5C5
+}
+.rank-item .avatar {
+  width: 80rpx;
+  height: 80rpx;
+  margin: 0 20rpx;
+}
+
+.rank-item .name {
+  font-size: 32rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #000000;
+}
+.rank-item .words {
+  font-size: 24rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #999999;
+}
+.rank-item .popularity {
+  font-size: 26rpx;
+font-family: PingFangSC-Regular, PingFang SC;
+font-weight: 400;
+color: #FE8302;
+}
+.rank-item .vote {
+  width: 116rpx;
+  height: 50rpx;
+  font-size: 26rpx;
+font-family: PingFangSC-Regular, PingFang SC;
+font-weight: 400;
+color: #FFFFFF;
+background: linear-gradient(90deg, #FE8302 0%, #FEBA32 100%);
+border-radius: 25rpx;
+}

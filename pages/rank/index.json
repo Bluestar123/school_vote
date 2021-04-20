@@ -1,3 +1,5 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "top-rank": "/components/top-rank"
+  }
 }

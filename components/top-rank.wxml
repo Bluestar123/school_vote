@@ -1,5 +1,5 @@
 <view class="container flex">
-  <view class="item" wx:for="{{list}}" wx:key="index">
+  <view class="item {{cls}}" wx:for="{{list}}" wx:key="index">
     <view class="w-100 text-center">
       <image class="img-crown" src="/images/top-rank/{{index}}-crown.png"></image>
     </view>
@@ -9,6 +9,6 @@
     </view>
     <view class="name text-center">{{item.name}}</view>
     <view class="popularity text-center">{{item.popularity}}</view>
-    <view class="linear-gradient vote flex jc-center ai-center">投票</view>
+    <view wx:if="{{!hideVote}}" class="linear-gradient vote flex jc-center ai-center">投票</view>
   </view>
 </view>

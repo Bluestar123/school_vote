@@ -10,7 +10,12 @@ Component({
     list: {
       type: Array,
       default: []
-    }
+    },
+    hideVote: {
+      type: Boolean,
+      default: false
+    },
+    cls: String
   },
 
   /**
