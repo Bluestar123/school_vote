@@ -1,0 +1,13 @@
+<day-container>
+  <view class="mask"></view>
+  <view class="container">
+    <view wx:for="{{prizeList}}" class="prize-item w-100 p-relative text-center" wx:key="index">
+      <view class="title p-absolute flex ai-center jc-center">{{item.title}}</view>
+      <view class="description w-100 text-center">{{item.description}}</view>
+      <view class="sub-description w-100 text-center">{{item.subdescription}}</view>
+      <view class="prize-img">
+        <image src="https://up.enterdesk.com/edpic_360_360/27/8f/93/278f938be4b460a57962d542eee989f6.jpg"></image>
+      </view>
+    </view>
+  </view>
+</day-container>

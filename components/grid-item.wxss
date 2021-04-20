@@ -1,0 +1,13 @@
+/* components/grid-item.wxss */
+.container {
+  padding: 22rpx 0 32rpx 0;
+}
+.flex-1.border-right {
+  border-right: 1rpx solid #FFE6E6;}
+.num {
+  font-size: 26rpx;
+  margin-bottom: 10rpx;
+}
+.text {
+  font-size: 24rpx;
+}

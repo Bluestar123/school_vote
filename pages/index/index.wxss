@@ -1,0 +1,143 @@
+/**index.wxss**/
+.audio-icon {
+  position: fixed;
+  right: 30rpx;
+  top: 96rpx;
+  width: 46rpx;
+  height: 46rpx;
+  font-size: 16rpx;
+  background: #000000;
+  opacity: 0.6;
+  color: #fff;
+}
+.audio-icon image {
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.audio-on {
+  animation: audio-rotate 4s linear infinite;
+}
+
+/* 旋转动画 */
+@keyframes audio-rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.adimg {
+  height: 360rpx;
+}
+
+.time-count-down {
+  width: 690rpx;
+  height: 74rpx;
+  background: #FEF2E5;
+  border-radius: 8rpx;
+  color: #FE8302;
+  font-size: 26rpx;
+  margin: 0 auto;
+  margin-bottom: 30rpx;
+}
+
+.divid-line {
+  height: 16rpx;
+  background: #F7F7F7;
+}
+
+.rank-list {
+  padding: 30rpx;
+}
+.input-el {
+  margin-bottom: 30rpx;
+}
+.input-view {
+  width: 522rpx;
+  height: 60rpx;
+  border-radius: 30px;
+  border: 1px solid #CCCCCC;
+  padding:0 29rpx 0 38rpx;
+}
+input {
+  color:#999;font-size:26rpx
+}
+.search {
+  width: 29.86rpx;
+  height: 29.82rpx;
+}
+
+.input-view + text {
+  font-size: 32rpx;
+  color: #FE8302;
+  padding-left: 19rpx;
+  border-left: 1rpx solid #ccc;
+  margin-left: 19rpx
+}
+
+.list {
+  flex-wrap: wrap;
+  background: #fff;
+}
+.list-item {
+  width: 330rpx;
+  height: 372rpx;
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 8px 8px 0px 0px;
+  border: 1px solid #F7F7F7;
+  margin-bottom: 30rpx;
+}
+.list-item:nth-child(odd) {
+  margin-right: 30rpx;
+}
+.list-item image {
+  height: 220rpx;
+  margin-bottom: 30rpx;
+}
+
+.to-top {
+  position: fixed;
+  right: 30rpx;
+  bottom: 50rpx;
+  width: 60rpx;
+  height: 60rpx;
+  background: #FFFFFF;
+  box-shadow: 0rpx 2rpx 15rpx 0rpx rgba(0, 0, 0, 0.1);
+}
+.to-top image {
+  width: 19.9rpx;
+  height: 25.34rpx;
+  overflow: hidden;
+}
+
+.item-popularity {
+  font-size: 24rpx;
+  color:#fe8302;
+  margin-top: 10rpx;
+}
+.item-num {
+  font-size: 32rpx;
+  font-family: TencentSansW7;
+  margin-right: 10rpx;
+}
+.item-name {
+  font-size: 32rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+}
+.item-vote {
+  width: 116rpx;
+  height: 50rpx;
+  background: linear-gradient(90deg, #FE8302 0%, #FEBA32 100%);
+  border-radius: 25rpx;
+  font-size: 26rpx;
+  color:#fff;
+}
+
+.view-more {
+  color: #666;
+  font-size: 24rpx;
+}

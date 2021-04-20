@@ -1,0 +1,4 @@
+<view>
+  <view catchtap="bindNavToComplaint" class="fixed-ball radius-50 flex ai-center jc-center">投诉</view>
+  <slot></slot>
+</view>

@@ -1,0 +1,60 @@
+/* pages/prize/index.wxss */
+.container {
+  min-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(180deg, #FE8302 0%, rgba(255, 255, 255, 0.5) 100%);
+}
+.mask {
+  position: fixed;
+  width: 656rpx;
+  height: 247rpx;
+  background: #FFA74A;
+  opacity: 0.47;
+  transform: skew(-30deg);
+  top: 0;
+  left: -95rpx;
+  z-index: 0;
+}
+
+.prize-item {
+  background: #fff;
+  height: 389rpx;
+  border-radius: 8rpx;
+  margin-top: 99rpx;
+  z-index: 10;
+}
+
+.title {
+  transform: skew(-10deg) translateX(-50%); 
+  background: linear-gradient(180deg, #FE8302 0%, #FEBA32 100%);
+  border-radius: 8rpx;
+  width: 370rpx;
+  height: 80rpx;
+  font-size: 40rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+  left: 50%;
+  top:-40rpx;
+}
+
+.description {
+  color: #CD6900;
+  font-size: 32rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  padding-top: 71rpx;
+  padding-bottom: 10rpx;
+}
+.sub-description{
+  font-size: 26rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #CD6900;
+  margin-bottom: 20rpx;
+}
+
+.prize-item .prize-img {
+  height: 212rpx;
+  overflow: hidden;
+}

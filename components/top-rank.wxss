@@ -1,0 +1,60 @@
+/* components/top-rank.wxss */
+.container {
+  padding: 35rpx 0 30rpx 0;
+}
+
+.item {
+  width: 33.3%;
+  flex-wrap: wrap;
+}
+.img-crown {
+  width: 70.34rpx;
+  height: 42.94rpx;
+}
+.avatar .avatar-img{
+  width: 120rpx;
+  height: 120rpx;
+  overflow: hidden;
+  border: 4rpx solid;
+  margin-top: -3rpx;
+}
+.item:nth-child(1), .item:nth-child(3) {
+  margin-top: 31rpx;
+}
+.item:nth-child(1) .avatar .avatar-img {
+  border-color: #E1E8EB;
+}
+.item:nth-child(2) .avatar .avatar-img {
+  width: 152rpx;
+  height: 152rpx;
+  border-color: #FEC819;
+}
+.item:nth-child(3) .avatar .avatar-img {
+  border-color: #EF8863
+}
+.rank {
+  width: 46rpx;
+  height: 46rpx;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.name {
+  margin-top: 33rpx;
+  font-size: 32rpx;
+  margin-bottom: 10rpx;
+}
+.popularity {
+  font-size: 26rpx;
+  color: #333;
+  margin-bottom: 10rpx;
+}
+.vote {
+  color:#fff;
+  width: 116rpx;
+  height: 50rpx;
+  border-radius: 25rpx;
+  font-size: 26rpx;
+  margin: auto;
+}

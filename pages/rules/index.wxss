@@ -1,0 +1,71 @@
+/* pages/rules/index.wxss */
+.container {
+  min-height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(180deg, #FE8302 0%, rgba(255, 255, 255, 0.5) 100%);
+}
+.mask {
+  position: fixed;
+  width: 656rpx;
+  height: 247rpx;
+  background: #FFA74A;
+  opacity: 0.47;
+  transform: skew(-30deg);
+  top: 0;
+  left: -95rpx;
+}
+.rule-item {
+  width: 690rpx;
+  background: #FFFFFF;
+  border-radius: 8rpx;
+  margin: 0 auto;
+  margin-bottom: 99rpx;
+  padding: 30rpx;
+  z-index: 10;
+}
+.mask1 {
+  width: 669rpx;
+  top: -22rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #FFFFFF;
+  border-radius: 8px;
+  opacity: 0.2;
+  height: 50rpx;
+  z-index: 2;
+}
+.mask2 {
+  width: 650rpx;
+  top: -30rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #FFFFFF;
+  border-radius: 8px;
+  opacity: 0.2;
+  height: 50rpx;
+  z-index: 1;
+}
+.rule-item:first-child {
+  margin-top: 90rpx;
+}
+
+.title text{
+  color: #CD6900;
+  font-size: 32rpx;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  margin: 0 20rpx;
+}
+.title image {
+  width: 151rpx;
+  height: 16rpx;
+}
+.content {
+  margin-top: 32rpx;
+  font-size: 30rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #CD6900;
+  line-height: 42rpx;
+  white-space: pre-wrap;
+}

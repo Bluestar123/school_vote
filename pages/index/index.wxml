@@ -1,0 +1,49 @@
+<!--index.wxml-->
+<day-container>
+  <view bindtap="bindAudioAction" class="audio-icon flex jc-center ai-center radius-50 {{audioOn ? 'audio-on' : ''}}"><image src="/images/index/music.png"></image></view>
+  <image class="adimg w-100" src="{{adimg}}"></image>
+  <grid-item borderRight list="{{gridList}}" bgColor="" numColor="#fff" textColor="#fff"></grid-item>
+  <top-rank list="{{topRankList}}"></top-rank>
+  <view class="time-count-down flex jc-center ai-center">
+    <block wx:if="{{remainTime > 0}}">
+      <text>距离活动结束还有</text>
+      <text>{{countDownTxt.day}}天</text>
+      <text>{{countDownTxt.hou}}时</text>
+      <text>{{countDownTxt.min}}分</text>
+      <text>{{countDownTxt.sec}}秒</text>
+    </block>
+    <block wx:else>
+      <text>该活动以结束</text>
+    </block>
+  </view>
+  <view class="w-100 divid-line"></view>
+
+  <view class="rank-list">
+    <view class="input-el w-100 flex ai-center">
+      <view class="input-view flex ai-center ">
+        <input placeholder="请输入编号或姓名" class="w-100" type="text" bindinput="bindinput" value="{{inputVal}}"/>
+        <image class="search" src="/images/search.png"></image>
+      </view>
+      <text>我要参赛</text>
+    </view>
+    <view class="list flex">
+      <view class="list-item" wx:for="{{ranklist}}" wx:key="index">
+        <image class=" w-100" src="{{item.avatar}}"></image>
+        <view class="flex ai-center" style="justify-content: space-between;padding: 0 10rpx">
+          <view>
+            <view>
+              <text class="item-num">123号</text>
+              <text class="item-name">测试</text>
+            </view>
+            <view class="item-popularity">123人气值</view>
+          </view>
+          <view class="item-vote flex ai-center jc-center">投票</view>
+        </view>
+      </view>
+      <view class="view-more w-100 text-center">查看更多 ></view>
+    </view>
+  </view>
+  <view hidden='{{!floorstatus}}' bindtap="goTop" class='to-top radius-50 flex ai-center jc-center'>
+    <image src="/images/to-top.png"></image>
+  </view>
+</day-container>

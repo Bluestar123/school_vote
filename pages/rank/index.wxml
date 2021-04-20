@@ -1,0 +1,15 @@
+<view class="container">
+  <view wx:for="{{rankList}}" wx:key="index">
+
+    <view wx:if="{{index > 2}}" class="item flex ai-center">
+      <text>{{index + 1}}</text>
+      <view>
+        <image class="radius-50" src="{{item.avatar}}"></image>
+        <view>
+          <view>{{item.name}} <text>{{item.words}}</text></view>
+        </view>
+        <view class="vote linear-gradient">投票</view>
+      </view>
+    </view>
+  </view>
+</view>

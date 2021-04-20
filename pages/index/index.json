@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "grid-item": "/components/grid-item",
+    "top-rank": "/components/top-rank"
+  }
+}

@@ -1,0 +1,6 @@
+<view style="background:{{bgColor}}" class="flex ai-center container {{bgColor ? '' : 'linear-gradient'}}">
+  <view wx:for="{{list}}" class="flex-1 {{(borderRight && index < list.length - 1) ? 'border-right':''}}" wx:key="index">
+    <view class="text-center num " style="color: {{numColor || ''}}">{{item.num}}</view>
+    <view class="text-center text " style="color: {{textColor || ''}}">{{item.text}}</view>
+  </view>
+</view>

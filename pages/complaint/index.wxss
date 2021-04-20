@@ -1,0 +1,12 @@
+/* pages/complaint/index.wxss */
+.container {
+  padding: 0 50rpx;
+}
+.title{
+  font-size: 40rpx;
+  padding: 50rpx;
+  padding-top: 70rpx;
+}
+.item:first-child{
+  margin-top: 70rpx;
+}

@@ -1,0 +1,14 @@
+<view class="container flex">
+  <view class="item" wx:for="{{list}}" wx:key="index">
+    <view class="w-100 text-center">
+      <image class="img-crown" src="/images/top-rank/{{index}}-crown.png"></image>
+    </view>
+    <view class="avatar w-100 text-center p-relative">
+      <image class="radius-50 avatar-img" src="{{item.avatar}}"></image>
+      <image class="p-absolute rank" src="/images/top-rank/{{index}}.png"></image>
+    </view>
+    <view class="name text-center">{{item.name}}</view>
+    <view class="popularity text-center">{{item.popularity}}</view>
+    <view class="linear-gradient vote flex jc-center ai-center">投票</view>
+  </view>
+</view>

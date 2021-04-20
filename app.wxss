@@ -1,0 +1,81 @@
+/**app.wxss**/
+view, scroll-view, swiper, swiper-item {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: PingFangSC-Regular, PingFang SC;
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* flex 布局 */
+.flex {
+	display: flex;
+}
+
+.flex-1 {
+	flex: 1;
+}
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.jc-center {
+	justify-content: center;
+}
+
+.ai-center {
+	align-items: center;
+}
+
+.ml-auto {
+	margin-left: auto;
+}
+.mr-auto {
+	margin-right: auto;
+}
+
+/* 对齐 */
+.text-center {
+	text-align: center;
+}
+
+/* 圆角 */
+.radius-50 {
+	border-radius: 50%;
+}
+
+/* 边框 */
+.border-bottom {
+	padding: 20rpx 0;
+	border-bottom: 1rpx solid #eee;
+}
+.border-top {
+	padding: 20rpx 0;
+	border-top: 1rpx solid #eee;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+/* 渐变色 */
+.linear-gradient{
+	background-image: linear-gradient(to right, #FE8705 , #FEB831);
+}
+
+image {
+	vertical-align: middle;
+}
+
+.p-relative {
+	position: relative;
+}
+.p-absolute {
+	position: absolute;
+}

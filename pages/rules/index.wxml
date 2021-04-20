@@ -1,0 +1,16 @@
+<!--pages/rules/index.wxml-->
+<day-container>
+  <view class="mask"></view>
+  <view class="container w-100">
+    <view wx:for="{{ruleList}}" class="rule-item p-relative" wx:key="index">
+      <view class="p-absolute mask1"></view>
+      <view class="p-absolute mask2"></view>
+      <view class="title w-100 flex ai-center jc-center">
+        <image src="/images/title-icon-left.png"></image>
+        <text>{{item.title}}</text>
+        <image src="/images/title-icon-right.png"></image>
+      </view>
+      <view class="content">{{item.content}}</view>
+    </view>
+  </view>
+</day-container>

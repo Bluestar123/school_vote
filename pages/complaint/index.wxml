@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="title text-center">请选择反馈类型</view>
+  <view class="subtitle text-center">您的反馈将发送给小程序开发者</view>
+  <view>
+    <view hover-class="navigator-hover" class="item border-bottom {{index == 0 ? 'border-top':''}}" wx:for="{{list}}" wx:key="index">
+      <navigator hover-class="none" url="{{item.url + '?title=' + item.title}}">{{item.title}}</navigator>
+    </view>
+  </view>
+</view>

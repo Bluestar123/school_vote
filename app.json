@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/rules/index",
+    "pages/prize/index",
+    "pages/rank/index",
+    "pages/complaint/index",
+    "pages/complaint/form"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "usingComponents": {
+    "day-container": "/components/day-container"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#FE8302",
+    "list": [
+      {
+        "iconPath": "/images/tabbar/home.png",
+        "selectedIconPath": "/images/tabbar/homeActive.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "/images/tabbar/rank.png",
+        "selectedIconPath": "/images/tabbar/rankActive.png",
+        "pagePath": "pages/rank/index",
+        "text": "排行榜"
+      },
+      {
+        "iconPath": "/images/tabbar/prise.png",
+        "selectedIconPath": "/images/tabbar/priseActive.png",
+        "pagePath": "pages/prize/index",
+        "text": "奖品"
+      },
+      {
+        "iconPath": "/images/tabbar/rule.png",
+        "selectedIconPath": "/images/tabbar/ruleActive.png",
+        "pagePath": "pages/rules/index",
+        "text": "规则"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

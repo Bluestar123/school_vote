@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="title border-bottom">{{title}}</view>
+  <view class=" border-bottom textarea-contaienr">
+    <textarea class="w-100" bindinput="bindinput" placeholder="请输入投诉内容" maxlength="200" id="" cols="30" rows="10"></textarea>
+    <text>{{textareaVal.length}}/200</text>
+  </view>
+  <view class="title border-bottom">证据截图({{imgList.length}}/4)</view>
+  <view class="flex img-container flex-wrap">
+    <image wx:for="{{imgList}}" wx:key="index" src="{{item}}"></image>
+    <image bindtap="bindChooseImg" wx:if="{{imgList.length < 4}}" src="/images/tabbar/home.png"></image>
+  </view>
+  <view class="title flex border-bottom border-top">
+    <text>联系方式</text>
+    <input type="text" class="flex-1" placeholder="邮箱/手机号" />
+  </view>
+  <label class="radio flex jc-center ai-center" bindtap="bindRadio">
+    <radio checked="{{checked}}"/>允许开发者在48小时内通过客服消息联系我
+  </label>
+  <button bindtap="bindSubmit" type="primary">提交</button>
+</view>
