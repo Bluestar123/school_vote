@@ -23,6 +23,7 @@
         <text>参赛图片：</text>
         <view>
           <image class="upload-img" wx:for="{{imgList}}" src="{{item.src}}" wx:key="index"></image>
+          <image class="upload-img" bindtap="bindChooseImg" src="/images/add-img.png"></image>
         </view>
       </view>
     </view>

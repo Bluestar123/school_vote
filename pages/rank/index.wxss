@@ -85,3 +85,9 @@ color: #FFFFFF;
 background: linear-gradient(90deg, #FE8302 0%, #FEBA32 100%);
 border-radius: 25rpx;
 }
+
+.rank-index {
+  font-size: 40rpx;
+  font-family: TencentSansW7;
+  color: #000000;
+}

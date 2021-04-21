@@ -7,7 +7,7 @@
   <view class="title border-bottom">证据截图({{imgList.length}}/4)</view>
   <view class="flex img-container flex-wrap">
     <image wx:for="{{imgList}}" wx:key="index" src="{{item}}"></image>
-    <image bindtap="bindChooseImg" wx:if="{{imgList.length < 4}}" src="/images/tabbar/home.png"></image>
+    <image bindtap="bindChooseImg" wx:if="{{imgList.length < 4}}" src="/images/add-img.png"></image>
   </view>
   <view class="title flex border-bottom border-top">
     <text>联系方式</text>

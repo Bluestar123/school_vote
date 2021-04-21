@@ -32,7 +32,7 @@ Page({
   bindChooseImg() {
     const _this = this
     wx.chooseImage({
-      count: 9 - _this.data.imgList.length,
+      count: _this.data.imgList.length,
       sizeType: ['original', 'compressed'],
       sourceType: ['album', 'camera'],
       success (res) {

@@ -4,7 +4,7 @@
     <view class="list  p-relative">
       <view wx:for="{{ranklist}}" wx:key="index">
         <view  class="rank-item flex ai-center">
-          <text>{{index + 1}}</text>
+          <text class="rank-index">{{index + 1}}</text>
           <view class="flex w-100 ai-center">
             <image class="avatar radius-50" src="{{item.avatar}}"></image>
             <view class="flex-1">
