@@ -5,7 +5,10 @@
     "pages/prize/index",
     "pages/rank/index",
     "pages/complaint/index",
-    "pages/complaint/form"
+    "pages/complaint/form",
+    "pages/profile/index",
+    "pages/reward/index",
+    "pages/signup/index"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -48,6 +48,7 @@ view, scroll-view, swiper, swiper-item {
 /* 圆角 */
 .radius-50 {
 	border-radius: 50%;
+	overflow: hidden;
 }
 
 /* 边框 */
@@ -62,6 +63,9 @@ view, scroll-view, swiper, swiper-item {
 
 .w-100 {
 	width: 100%;
+}
+.h-100 {
+	height: 100%;
 }
 
 /* 渐变色 */

@@ -1,0 +1,81 @@
+/* pages/signup/index.wxss */
+page {
+  background: #F7F7F7;
+}
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.user-info .avatar{
+  width: 120rpx;
+  height: 120rpx;
+  border: 3rpx solid #C0C8CD;
+  margin: 30rpx 0;
+}
+.user-info .nickname {
+  font-size: 32rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.form {
+  margin-top: 36rpx;
+  padding: 30rpx;
+  background-color: #fff;
+}
+.form-item {
+  margin-bottom: 30rpx;
+}
+.form-item text {
+  width: 150rpx;
+  font-size: 30rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #000000;
+  white-space: nowrap;
+}
+.form-item input, .form-item textarea{
+  background: #FFFFFF;
+  border-radius: 8rpx;
+  border: 1rpx solid #CCCCCC;
+  flex: 1;
+  padding: 9rpx 10rpx;
+}
+
+.placeCls {
+  font-size: 30rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #CCCCCC;
+}
+
+.submit-btn-el {
+  margin-top: 122rpx;
+  background-color: #fff;
+  padding: 30rpx;
+}
+.submit-btn-el .btn {
+  width: 690rpx;
+  height: 90rpx;
+  background: #FCDEC0;
+  border-radius: 8rpx;font-size: 32rpx;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+
+.submit-btn-el .btn.active {
+  background: #FE8302;
+}
+
+.upload-img {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 8rpx;
+  margin-right: 15rpx;
+  margin-bottom: 15rpx;
+}

@@ -9,5 +9,7 @@
         <image class="w-100 h-100" src="https://up.enterdesk.com/edpic_360_360/27/8f/93/278f938be4b460a57962d542eee989f6.jpg"></image>
       </view>
     </view>
+
+    <view class="tip text-center">奖品以实物为准，活动解释权归公司所有</view>
   </view>
 </day-container>

@@ -1,5 +1,5 @@
 <view class="container flex">
-  <view class="item {{cls}}" wx:for="{{list}}" wx:key="index">
+  <view catchtap="bindTapItem" class="item {{cls}}" wx:for="{{list}}" wx:key="index">
     <view class="w-100 text-center">
       <image class="img-crown" src="/images/top-rank/{{index}}-crown.png"></image>
     </view>

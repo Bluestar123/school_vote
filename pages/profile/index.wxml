@@ -1,0 +1,59 @@
+<day-container>
+  <view class="container">
+    <view class="w-100 top">
+      <view class="profile flex w-100 ai-center">
+        <view class="avatar radius-50">
+          <image class="w-100 h-100" src="/images/search.png"></image>
+        </view>
+        <view class="user-info">
+          <view class="name flex ai-center">
+            <text>范思远</text>
+            <image class="gender" src="/images/male.png"></image>
+          </view>
+          <view class="words">最美风景，最美山</view>
+        </view>
+      </view>
+      <view class="grid">
+        <grid-item class="h-100" list="{{gridList}}" bgColor="#FEF2E5" numColor="#FE8302" textColor="#CD6900"></grid-item>
+      </view>
+      <view class="action flex">
+        <view class='img qrcode flex jc-center'>  
+          <image  src="/images/qrcode.png"></image>
+          <text>分享海报</text>
+        </view>
+        <view class="share img  flex jc-center">
+          <image  src="/images/share.png"></image>
+          <text>分享好友</text>
+        </view>
+      </view>
+    </view>
+
+    <view class="bottom">
+      <swiper autoplay current="{{current}}" bindchange="bindchange" indicator-dots style="height:{{swiperList[current].height}}px;">
+        <block wx:for="{{swiperList}}" wx:key="*this">
+          <swiper-item>
+            <image mode='widthFix' data-index="{{index}}" bindload="imageLoad" class="w-100" src="{{item.src}}"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+
+      <view class="user-info">
+        <view class="title w-100 flex ai-center jc-center">
+          <image src="/images/title-icon-left.png"></image>
+          <text>选手信息</text>
+          <image src="/images/title-icon-right.png"></image>
+        </view>
+        <view class="info">
+          <view>编号： 608</view>
+          <view>姓名： 608</view>
+          <view>签名： 608</view>
+        </view>
+      </view>
+
+      <view class="action-btn w-100 flex">
+        <view class="btn-left flex jc-center ai-center">给他助力</view>
+        <view class="btn-rigth flex jc-center ai-center">给他打赏</view>
+      </view>
+    </view>
+  </view>
+</day-container>

@@ -1,0 +1,115 @@
+/* pages/reward/index.wxss */
+page {
+  background: #F7F7F7;
+}
+.bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.user-info .avatar{
+  width: 120rpx;
+  height: 120rpx;
+  border: 3rpx solid #C0C8CD;
+  margin: 30rpx 0;
+}
+.user-info .nickname {
+  font-size: 32rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.grid {
+  margin-top: 30rpx;
+  background-color: #fff;
+  padding-top: 30rpx;
+}
+
+.num {
+  font-size: 36rpx!important;
+}
+.text {
+  font-size: 26rpx!important;
+}
+
+.reward {
+  margin-top: 16rpx;
+  height: 879rpx;
+  background-color: #fff;
+  flex-wrap: wrap;
+  padding: 30rpx 20rpx;
+  margin-bottom: 16rpx;
+}
+.reward-item {
+  height: 262rpx;
+  width: 33.3%;
+  flex-wrap: wrap;
+  padding: 30rpx;
+  float: left;
+}
+
+.reward-item image {
+  width: 97rpx;
+  height: 96rpx;
+}
+
+.reward-item .money {
+  line-height: 42rpx;
+  margin: 24rpx 0 3rpx 0;
+}
+
+swiper-item{
+  flex-wrap: wrap;
+}
+
+.pay-el {
+  background-color: #fff;
+  padding: 30rpx;
+}
+
+.pay-el .btn {
+  width: 188rpx;
+  height: 90rpx;
+  background: #FE8302;
+  border-radius: 8rpx;
+  font-size: 32rpx;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #FFFFFF;
+}
+.total {
+  font-size: 30rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #000000;
+  margin-right: 60rpx;
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+.count {
+  font-size: 30rpx;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #000000;
+}
+.count  text{
+  white-space: nowrap;
+}
+.count  text:nth-child(1) {
+  margin-right: 20rpx;
+}
+.count  text:nth-child(2) {
+  margin-right: 10rpx;
+}
+.count  text:nth-child(3) {
+  padding: 0 22rpx;
+  background-color: #F7F7F7;
+  margin-right: 10rpx;
+}
+.count  text:nth-child(4) {
+  margin-right: auto;
+}

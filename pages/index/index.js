@@ -98,5 +98,12 @@ Page({
         audioInstance.play()
       }
     })
+  },
+  // 跳转个人主页
+  bindTapTopRankItem() {
+    console.log(555555)
+    wx.navigateTo({
+      url: '/pages/profile/index',
+    })
   }
 })

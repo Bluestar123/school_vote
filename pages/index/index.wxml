@@ -3,7 +3,7 @@
   <view bindtap="bindAudioAction" class="audio-icon flex jc-center ai-center radius-50 {{audioOn ? 'audio-on' : ''}}"><image src="/images/index/music.png"></image></view>
   <image class="adimg w-100" src="{{adimg}}"></image>
   <grid-item borderRight list="{{gridList}}" bgColor="" numColor="#fff" textColor="#fff"></grid-item>
-  <top-rank list="{{topRankList}}"></top-rank>
+  <top-rank bind:bindTapTopRankItem="bindTapTopRankItem" list="{{topRankList}}"></top-rank>
   <view class="time-count-down flex jc-center ai-center">
     <block wx:if="{{remainTime > 0}}">
       <text>距离活动结束还有</text>

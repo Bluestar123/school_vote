@@ -1,0 +1,33 @@
+<day-container>
+  <image mode="widthFix" src="/images/bg.png" class="bg w-100"></image>
+  <view class="container">
+    <view class="user-info text-center">
+      <image src="/images/female.png" class="avatar radius-50"></image>
+      <view class="nickname">测不准</view>
+    </view>
+
+    <view class="form w-100">
+      <view class="form-item flex ai-center">
+        <text>姓名：</text>
+        <input placeholder="请输入内容" placeholder-class="placeCls" type="text" />
+      </view>
+      <view class="form-item flex ai-center">
+        <text>手机号：</text>
+        <input placeholder="请输入内容" placeholder-class="placeCls" type="number"/>
+      </view>
+      <view class="form-item flex">
+        <text>参赛宣言：</text>
+        <textarea placeholder="请输入内容" placeholder-class="placeCls" name="" id="" cols="30" rows="10"></textarea>
+      </view>
+      <view class="form-item flex upload-img-el">
+        <text>参赛图片：</text>
+        <view>
+          <image class="upload-img" wx:for="{{imgList}}" src="{{item.src}}" wx:key="index"></image>
+        </view>
+      </view>
+    </view>
+    <view class="submit-btn-el">
+      <view class="btn flex jc-center ai-center active">保存</view>
+    </view>
+  </view>
+</day-container>

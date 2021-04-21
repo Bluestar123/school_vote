@@ -61,3 +61,13 @@
   left: 0;
   padding: 0 40rpx;
 }
+
+.tip {
+  font-size: 26rpx;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #CD6900;
+  line-height: 37rpx;
+  margin-top: 30rpx;
+  margin-bottom: 40rpx;
+}

@@ -1,0 +1,36 @@
+<day-container>
+  <image mode="widthFix" src="/images/bg.png" class="bg w-100"></image>
+  <view class="container">
+    <view class="user-info text-center">
+      <image src="/images/female.png" class="avatar radius-50"></image>
+      <view class="nickname">测不准</view>
+    </view>
+  </view>
+  <view class="grid">
+    <grid-item list="{{gridList}}" bgColor="#fff" numColor="#FE8302" textColor="#CD6900"></grid-item>
+  </view>
+
+  <swiper indicator-color="#E0E0E0" indicator-active-color='#ccc' indicator-dots  class="reward w-100 flex">
+    <swiper-item class="w-100" wx:for="{{rewardList}}" wx:for-item="p" wx:for-index="i" wx:key="i">
+      <view wx:for="{{p.list}}" wx:key="index" class="flex reward-item jc-center">
+        <image src="{{item.src}}"></image>
+        <view class="money w-100 text-center">￥ {{item.money}}</view>
+        <view class="w-100 text-center">{{item.description}}</view>
+      </view>
+    </swiper-item>
+  </swiper>
+
+  <view class="pay-el flex ai-center">
+    <view class="count flex">
+      <text>数量</text>
+      <text bindtap="decrease">-</text>
+      <text>{{count}}</text>
+      <text bindtap="increase">+</text>
+    </view>
+    <view class="total">
+      <text>合计：</text>
+      <text>{{totalMoney}}</text>
+    </view>
+    <view class="btn flex ai-center jc-center">立即支付</view>
+  </view>
+</day-container>
