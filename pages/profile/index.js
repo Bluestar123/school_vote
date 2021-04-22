@@ -59,6 +59,12 @@ imageLoad: function (e) {//获取图片真实宽度
         current: e.detail.current
     })
   },
+  // 打赏
+  bindReward() {
+    wx.navigateTo({
+      url: '/pages/reward/index',
+    })
+  },
 
   /**
    * 生命周期函数--监听页面隐藏

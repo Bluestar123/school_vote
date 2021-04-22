@@ -52,7 +52,7 @@
 
       <view class="action-btn w-100 flex">
         <view class="btn-left flex jc-center ai-center">给他助力</view>
-        <view class="btn-rigth flex jc-center ai-center">给他打赏</view>
+        <view bindtap="bindReward" class="btn-rigth flex jc-center ai-center">给他打赏</view>
       </view>
     </view>
   </view>

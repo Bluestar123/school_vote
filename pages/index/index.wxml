@@ -24,7 +24,7 @@
         <input placeholder="请输入编号或姓名" class="w-100" type="text" bindinput="bindinput" value="{{inputVal}}"/>
         <image class="search" src="/images/search.png"></image>
       </view>
-      <text>我要参赛</text>
+      <text bindtap="bindJoin">我要参赛</text>
     </view>
     <view class="list flex">
       <view class="list-item" wx:for="{{ranklist}}" wx:key="index">

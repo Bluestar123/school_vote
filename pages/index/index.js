@@ -105,5 +105,10 @@ Page({
     wx.navigateTo({
       url: '/pages/profile/index',
     })
+  },
+  bindJoin() {
+    wx.navigateTo({
+      url: '/pages/signup/index',
+    })
   }
 })

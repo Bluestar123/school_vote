@@ -3,7 +3,6 @@ page {
   background: #F7F7F7;
 }
 .bg {
-  position: fixed;
   top: 0;
   left: 0;
   z-index: -1;
@@ -37,7 +36,7 @@ page {
 
 .reward {
   margin-top: 16rpx;
-  height: 879rpx;
+  height: 900rpx;
   background-color: #fff;
   flex-wrap: wrap;
   padding: 30rpx 20rpx;
@@ -49,6 +48,11 @@ page {
   flex-wrap: wrap;
   padding: 30rpx;
   float: left;
+}
+
+.reward-item-active {
+  box-shadow: 0rpx 2rpx 20rpx 0rpx rgba(254, 144, 28, 0.2);
+  border-radius: 8rpx;
 }
 
 .reward-item image {
@@ -63,6 +67,7 @@ page {
 
 swiper-item{
   flex-wrap: wrap;
+  padding: 0 20rpx;
 }
 
 .pay-el {
