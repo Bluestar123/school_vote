@@ -1,7 +1,5 @@
 {
   "pages": [
-    "pages/reward/index",
-
     "pages/index/index",
     "pages/rules/index",
     "pages/prize/index",
@@ -9,6 +7,7 @@
     "pages/complaint/index",
     "pages/complaint/form",
     "pages/profile/index",
+    "pages/reward/index",
     "pages/signup/index"
   ],
   "window": {

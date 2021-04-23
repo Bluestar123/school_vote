@@ -1,6 +1,9 @@
 <day-container>
   <view class="mask"></view>
   <view class="container">
+    <view class="top-rank-el">
+      <top-rank cls="rankCls" list="{{topRankList}}" hideVote></top-rank>
+    </view>
     <view class="list  p-relative">
       <view wx:for="{{ranklist}}" wx:key="index">
         <view  class="rank-item flex ai-center">
