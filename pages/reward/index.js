@@ -26,7 +26,9 @@ Page({
     }),
     rewardList: [],
     count: 2,
-    totalMoney: '10.00'
+    totalMoney: '10.00',
+    current: 0,
+    activeIndex: null
   },
 
   /**
@@ -54,6 +56,19 @@ Page({
   decrease() {
     this.setData({
       count: --this.data.count
+    })
+  },
+
+  bindchangeSwiper(e) {
+    this.setData({
+      activeIndex: null,
+      current: e.detail.current
+    })
+  },
+
+  bindClickItem(e) {
+    this.setData({
+      activeIndex: e.currentTarget.dataset.index
     })
   },
 

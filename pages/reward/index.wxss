@@ -39,7 +39,7 @@ page {
   height: 900rpx;
   background-color: #fff;
   flex-wrap: wrap;
-  padding: 30rpx 20rpx;
+  padding: 20rpx;
   margin-bottom: 16rpx;
 }
 .reward-item {
@@ -64,10 +64,14 @@ page {
   line-height: 42rpx;
   margin: 24rpx 0 3rpx 0;
 }
+.description.active {
+  color: #FE8302;
+}
 
 swiper-item{
   flex-wrap: wrap;
   padding: 0 20rpx;
+  padding-top: 10rpx;
 }
 
 .pay-el {

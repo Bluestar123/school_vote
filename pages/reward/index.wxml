@@ -10,12 +10,12 @@
     <grid-item list="{{gridList}}" bgColor="#fff" numColor="#FE8302" textColor="#CD6900"></grid-item>
   </view>
 
-  <swiper indicator-color="#E0E0E0" indicator-active-color='#ccc' indicator-dots  class="reward w-100 flex">
+  <swiper indicator-color="#E0E0E0" bindchange="bindchangeSwiper" indicator-active-color='#ccc' current="{{current}}" indicator-dots  class="reward w-100 flex">
     <swiper-item class="w-100" wx:for="{{rewardList}}" wx:for-item="p" wx:for-index="i" wx:key="i">
-      <view wx:for="{{p.list}}" wx:key="index" hover-class="reward-item-active" class="flex reward-item jc-center">
+      <view bindtap="bindClickItem" data-index="{{index}}" wx:for="{{p.list}}" wx:key="index" class="flex reward-item jc-center {{current == i && activeIndex == index ? 'reward-item-active':''}}">
         <image src="{{item.src}}"></image>
         <view class="money w-100 text-center">￥ {{item.money}}</view>
-        <view class="w-100 text-center">{{item.description}}</view>
+        <view class="w-100 description text-center {{current == i && activeIndex == index ? 'active':''}}">{{item.description}}</view>
       </view>
     </swiper-item>
   </swiper>
